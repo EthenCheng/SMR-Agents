@@ -1,0 +1,113 @@
+[
+  {
+    "image_path": "images/example_1.jpg",
+    "question": "Is this lesion pedunculated or sessile?",
+    "answer": "Sessile"
+  },
+  {
+    "image_path": "images/example_1.jpg",
+    "question": "Is active bleeding visible in the image?",
+    "answer": "No"
+  },
+  {
+    "image_path": "images/example_1.jpg",
+    "question": "What is the most likely diagnosis for this lesion?",
+    "answer": "Adenomatous polyp"
+  },
+  {
+    "image_path": "images/example_1.jpg",
+    "question": "Is the surface of the lesion smooth?",
+    "answer": "Yes"
+  },
+  {
+    "image_path": "images/example_1.jpg",
+    "question": "Describe the morphological features of this intestinal lesion and analyze its possible pathology.",
+    "answer": "Sessile, smooth, likely adenomatous."
+  },
+  {
+    "image_path": "images/example_2.jpg",
+    "question": "Are there any polyps in the image?",
+    "answer": "Yes"
+  },
+  {
+    "image_path": "images/example_2.jpg",
+    "question": "What type of polyp is shown in the image?",
+    "answer": "adenomatous polyp"
+  },
+  {
+    "image_path": "images/example_2.jpg",
+    "question": "What are the morphological characteristics of the lesion in this image?",
+    "answer": "The polyp has no root, is spherical in shape, has a lobed and villous surface, and is red in color"
+  },
+  {
+    "image_path": "images/example_2.jpg",
+    "question": "What is the typical role of NBI in endoscopy?",
+    "answer": "NBI is an optical imaging technology that enhances the contrast of microstructures and vascular patterns on the mucosal surface by filtering specific wavelengths of light."
+  },
+  {
+    "image_path": "images/example_3.jpg",
+    "question": "Are there any polyps in the image?",
+    "answer": "No"
+  },
+  {
+    "image_path": "images/example_3.jpg",
+    "question": "Can you see any obvious signs of active bleeding in the image?",
+    "answer": "No"
+  },
+  {
+    "image_path": "images/example_3.jpg",
+    "question": "How healthy is the intestinal mucosa shown in the image?",
+    "answer": "The mucosa is of normal color, smooth in appearance, and shows no obvious abnormalities. The intestinal mucosa shown in the figure is in a healthy state."
+  },
+  {
+    "image_path": "images/example_3.jpg",
+    "question": "What are those ring-shaped or semi-ring-shaped protrusions in the image? What are their physiological functions?",
+    "answer": "The folds of the intestinal mucosa. In the colon, they mainly help mix contents and absorb water."
+  },
+  {
+    "image_path": "images/example_4.jpg",
+    "question": "Are there any polyps in the image?",
+    "answer": "Yes"
+  },
+  {
+    "image_path": "images/example_4.jpg",
+    "question": "What type of polyp is shown in the image?",
+    "answer": "Hyperplastic polyp"
+  },
+  {
+    "image_path": "images/example_4.jpg",
+    "question": "What are the morphological characteristics of the lesion in this image?",
+    "answer": "The polyp is small, smooth and rounded on the surface, slightly protruding, and similar in color to the surrounding mucosa"
+  },
+  {
+    "image_path": "images/example_4.jpg",
+    "question": "Is the bowel preparation adequate in this colonoscopy image?",
+    "answer": "Yellow substance visible at the bottom of the image, with a small amount of fecal residue that has not been completely cleared"
+  },
+  {
+    "image_path": "images/example_5.jpg",
+    "question": "Is there a stalk present?",
+    "answer": "Yes"
+  },
+  {
+    "image_path": "images/example_5.jpg",
+    "question": "Is the surrounding mucosa normal?",
+    "answer": "Yes"
+  },
+  {
+    "image_path": "images/example_5.jpg",
+    "question": "Is active bleeding seen?",
+    "answer": "No"
+  },
+  {
+    "image_path": "images/example_5.jpg",
+    "question": "How would you describe its surface?",
+    "answer": "Lobulated and erythematous"
+  }
+  ,
+  {
+    "image_path": "images/example_5.jpg",
+    "question": "What is a likely diagnosis?",
+    "answer": "Adenomatous polyp"
+  }
+]
