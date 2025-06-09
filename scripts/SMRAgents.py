@@ -72,7 +72,7 @@ class SMRAgents(BaseMethod):
         )
         
         if self.ff_print:
-            print(f"Initial Scene Graph: {initial_scene_graph[:500]}...")
+            print(f"Initial Scene Graph: {initial_scene_graph}")
         
         # Step 2: Refine scene graph using knowledge base
         if self.scene_graph_refiner:
@@ -89,7 +89,7 @@ class SMRAgents(BaseMethod):
                 return initial_scene_graph
             
             if self.ff_print:
-                print(f"Refined Scene Graph: {refined_scene_graph[:500]}...")
+                print(f"Refined Scene Graph: {refined_scene_graph}")
                 if validation_results["warnings"]:
                     print(f"Validation warnings: {validation_results['warnings']}")
             
@@ -148,7 +148,7 @@ class SMRAgents(BaseMethod):
             )
         
         if self.ff_print:
-            print(f"Iteration {iteration + 1} - Review Expert's Evaluation: {expert_evaluation[:300]}...")
+            print(f"Iteration {iteration + 1} - Review Expert's Evaluation: {expert_evaluation}")
         
         # Check if all opinions are consistent
         if "all opinions are consistent" in expert_evaluation.lower():
@@ -175,7 +175,7 @@ class SMRAgents(BaseMethod):
                 get_diagnostic_reassessment_prompt(question, description, experts_opinions)
             )
             if self.ff_print:
-                print(f"Updated Diagnostic Expert's Diagnosis: {expert_diagnosis[:300]}...")
+                print(f"Updated Diagnostic Expert's Diagnosis: {expert_diagnosis}")
         
         return experts_opinions, expert_diagnosis, True
     
@@ -211,7 +211,7 @@ class SMRAgents(BaseMethod):
                 updated_opinion = self.l_engine.get_response(specialist_feedback_prompt)
                 
                 if self.ff_print:
-                    print(f"Updated opinion for {specialist_name}: {updated_opinion[:200]}...")
+                    print(f"Updated opinion for {specialist_name}: {updated_opinion}")
                 
                 updated_opinions_list.append(f"Expert: {specialist_name}\n{updated_opinion}")
             else:
@@ -241,21 +241,21 @@ class SMRAgents(BaseMethod):
                         get_expert_consultation_prompt(question, description)
                     )
                     if self.ff_print:
-                        print(f"Expert Consultation: {expert_consultation[:300]}...")
+                        print(f"Expert Consultation: {expert_consultation}")
                     
                     # Step 3: Specialists provide reasoning and answers
                     experts_opinions = self.l_engine.get_response(
                         get_expert_opinions_prompt(question, description, expert_consultation)
                     )
                     if self.ff_print:
-                        print(f"Specialists' Opinions: {experts_opinions[:300]}...")
+                        print(f"Specialists' Opinions: {experts_opinions}")
                     
                     # Step 4: Diagnostic Expert provides diagnosis
                     expert_diagnosis = self.l_engine.get_response(
                         get_expert_diagnosis_prompt(question, description, experts_opinions)
                     )
                     if self.ff_print:
-                        print(f"Diagnostic Expert's Diagnosis: {expert_diagnosis[:300]}...")
+                        print(f"Diagnostic Expert's Diagnosis: {expert_diagnosis}")
                     
                     # Step 5: Iterative feedback and refinement
                     max_iterations = 3
@@ -273,7 +273,7 @@ class SMRAgents(BaseMethod):
                         get_integration_summary_prompt(question, description, all_expert_opinions)
                     )
                     if self.ff_print:
-                        print(f"Final Answer: {final_answer[:300]}...")
+                        print(f"Final Answer: {final_answer}")
                     
                     # Format and save final answer
                     format_json_out_put(question, answer, final_answer, idx, self.output_file_path)
